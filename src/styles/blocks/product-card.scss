@@ -7,12 +7,22 @@
 
   border: 1px solid $card-border-color;
   border-radius: 5px;
-  padding: 29px 14px 14px;
+  padding: 14px;
 
   &__img {
     height: 134px;
     width: 160px;
-    margin: 0 auto 45px;
+    margin: 15px auto 45px;
+    padding: 14px auto 0;
+    transition: transform 400ms;
+
+    &:hover {
+      box-sizing: content-box;
+      border: 3px solid $card-border-color;
+      margin: 0 auto 30px;
+      padding: 12px 0;
+      transform: scale(1.2);
+    }
   }
 
   &__title {
@@ -58,6 +68,7 @@
     height: $card-bottom-height;
     background-color: $main-color;
     border-radius: 5px;
+    transition-duration: 400ms;
   
     @extend %card-bottom-text;
     text-align: center;
