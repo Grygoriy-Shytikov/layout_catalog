@@ -1,12 +1,14 @@
 .content {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-
   &__products {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 944px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, $product-card-width);
+    justify-content: center;
+    grid-auto-flow: row;
+    gap: 50px 48px;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, $product-card-width);
+    }
   }
 }
