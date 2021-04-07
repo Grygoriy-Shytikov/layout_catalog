@@ -1,7 +1,6 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
 
   width: $product-card-width;
 
@@ -67,6 +66,7 @@
     width: 100%;
     height: $card-bottom-height;
     background-color: $main-color;
+    border: 1px solid $main-color;
     border-radius: 5px;
     transition-duration: 400ms;
   
